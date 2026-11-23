@@ -1,0 +1,230 @@
+[{
+  "op": "update",
+  "ns": "comercial.clientes",
+  "command": {
+    "q": {
+      "_id": 1
+    },
+    "u": {
+      "$set": {
+        "telefono": "6670000000"
+      }
+    },
+    "multi": false,
+    "upsert": false
+  },
+  "keysExamined": 1,
+  "docsExamined": 1,
+  "nMatched": 1,
+  "nModified": 1,
+  "nUpserted": 0,
+  "keysInserted": 0,
+  "keysDeleted": 0,
+  "numYield": 0,
+  "locks": {
+    "ReplicationStateTransition": {
+      "acquireCount": {
+        "w": {
+          "$numberLong": "1"
+        }
+      }
+    },
+    "Global": {
+      "acquireCount": {
+        "r": {
+          "$numberLong": "1"
+        },
+        "w": {
+          "$numberLong": "1"
+        }
+      }
+    },
+    "Database": {
+      "acquireCount": {
+        "w": {
+          "$numberLong": "1"
+        }
+      }
+    },
+    "Collection": {
+      "acquireCount": {
+        "w": {
+          "$numberLong": "1"
+        }
+      }
+    }
+  },
+  "flowControl": {
+    "acquireCount": {
+      "$numberLong": "1"
+    }
+  },
+  "storage": {
+    "data": {
+      "txnBytesDirty": {
+        "$numberLong": "96"
+      }
+    }
+  },
+  "millis": 0,
+  "planSummary": "EXPRESS_IXSCAN { _id: 1 },EXPRESS_UPDATE",
+  "planningTimeMicros": 129,
+  "execStats": {
+    "isCached": false,
+    "stage": "EXPRESS_UPDATE",
+    "keyPattern": "{ _id: 1 }",
+    "indexName": "_id_",
+    "keysExamined": 1,
+    "docsExamined": 1,
+    "nReturned": 0,
+    "nWouldModify": 1,
+    "nWouldUpsert": 0,
+    "nWouldDelete": 0
+  },
+  "ts": {
+    "$date": "2026-11-23T03:47:32.844Z"
+  },
+  "client": "127.0.0.1",
+  "appName": "app-ventas-web",
+  "allUsers": [
+    {
+      "user": "app_ventas",
+      "db": "comercial"
+    }
+  ],
+  "user": "app_ventas@comercial"
+},
+{
+  "op": "command",
+  "ns": "comercial.system.profile",
+  "command": {
+    "aggregate": "system.profile",
+    "pipeline": [
+      {
+        "$match": {
+          "command.grantRolesToUser": {
+            "$exists": true
+          }
+        }
+      },
+      {
+        "$group": {
+          "_id": 1,
+          "n": {
+            "$sum": 1
+          }
+        }
+      }
+    ],
+    "cursor": {},
+    "lsid": {
+      "id": {
+        "$uuid": "35ef183f-c7b7-40fe-bd2c-2e0740693069"
+      }
+    },
+    "$db": "comercial"
+  },
+  "keysExamined": 0,
+  "docsExamined": 1,
+  "cursorExhausted": true,
+  "numYield": 1,
+  "nreturned": 0,
+  "planCacheShapeHash": "EFE9C6AA",
+  "queryHash": "EFE9C6AA",
+  "planCacheKey": "96A93B02",
+  "queryFramework": "sbe",
+  "locks": {
+    "Global": {
+      "acquireCount": {
+        "r": {
+          "$numberLong": "2"
+        }
+      }
+    }
+  },
+  "flowControl": {},
+  "responseLength": 113,
+  "protocol": "op_msg",
+  "millis": 71,
+  "planSummary": "COLLSCAN",
+  "planningTimeMicros": 65309,
+  "ts": {
+    "$date": "2026-11-23T04:28:54.588Z"
+  },
+  "client": "127.0.0.1",
+  "appName": "MongoDB Compass",
+  "allUsers": [
+    {
+      "user": "admin",
+      "db": "admin"
+    }
+  ],
+  "user": "admin@admin"
+},
+{
+  "op": "command",
+  "ns": "comercial.system.profile",
+  "command": {
+    "aggregate": "system.profile",
+    "pipeline": [
+      {
+        "$match": {
+          "command.grantRolesToUser": {
+            "$exists": true
+          }
+        }
+      },
+      {
+        "$group": {
+          "_id": 1,
+          "n": {
+            "$sum": 1
+          }
+        }
+      }
+    ],
+    "cursor": {},
+    "lsid": {
+      "id": {
+        "$uuid": "a090d1dc-eb32-4c51-86c7-9eacb960a4c9"
+      }
+    },
+    "$db": "comercial"
+  },
+  "keysExamined": 0,
+  "docsExamined": 2,
+  "cursorExhausted": true,
+  "numYield": 1,
+  "nreturned": 0,
+  "planCacheShapeHash": "EFE9C6AA",
+  "queryHash": "EFE9C6AA",
+  "planCacheKey": "96A93B02",
+  "queryFramework": "sbe",
+  "locks": {
+    "Global": {
+      "acquireCount": {
+        "r": {
+          "$numberLong": "2"
+        }
+      }
+    }
+  },
+  "flowControl": {},
+  "responseLength": 113,
+  "protocol": "op_msg",
+  "millis": 40,
+  "planSummary": "COLLSCAN",
+  "planningTimeMicros": 31628,
+  "ts": {
+    "$date": "2026-11-23T04:38:29.252Z"
+  },
+  "client": "127.0.0.1",
+  "appName": "MongoDB Compass",
+  "allUsers": [
+    {
+      "user": "admin",
+      "db": "admin"
+    }
+  ],
+  "user": "admin@admin"
+}]

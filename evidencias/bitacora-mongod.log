@@ -1,0 +1,325 @@
+{"t":{"$date":"2026-11-22T21:33:05.029-07:00"},"s":"I",  "c":"CONTROL",  "id":20698,   "ctx":"thread1","msg":"***** SERVER RESTARTED *****"}
+
+{"t":{"$date":"2026-11-22T21:33:05.076-07:00"},"s":"I",  "c":"CONTROL",  "id":23285,   "ctx":"thread1","msg":"Automatically disabling TLS 1.0, to force-enable TLS 1.0 specify --sslDisabledProtocols 'none'"}
+
+{"t":{"$date":"2026-11-22T21:33:14.537-07:00"},"s":"I",  "c":"CONTROL",  "id":5945603, "ctx":"thread1","msg":"Multi threading initialized"}
+
+{"t":{"$date":"2026-11-22T21:33:14.545-07:00"},"s":"I",  "c":"NETWORK",  "id":4648601, "ctx":"thread1","msg":"Implicit TCP FastOpen unavailable. If TCP FastOpen is required, set at least one of the related parameters","attr":{"relatedParameters":["tcpFastOpenServer","tcpFastOpenClient","tcpFastOpenQueueSize"]}}
+
+{"t":{"$date":"2026-11-22T21:33:14.579-07:00"},"s":"I",  "c":"NETWORK",  "id":4915701, "ctx":"thread1","msg":"Initialized wire specification","attr":{"spec":{"incomingExternalClient":{"minWireVersion":0,"maxWireVersion":25},"incomingInternalClient":{"minWireVersion":0,"maxWireVersion":25},"outgoing":{"minWireVersion":6,"maxWireVersion":25},"isInternalClient":true}}}
+
+{"t":{"$date":"2026-11-22T21:33:14.590-07:00"},"s":"I",  "c":"CONTROL",  "id":23316,   "ctx":"thread1","msg":"Trying to start Windows service","attr":{"serviceName":"MongoDB"}}
+
+{"t":{"$date":"2026-11-22T21:33:14.595-07:00"},"s":"I",  "c":"CONTROL",  "id":4615611, "ctx":"initandlisten","msg":"MongoDB starting","attr":{"pid":5476,"port":27017,"dbPath":"C:/Program Files/MongoDB/Server/8.0/data","architecture":"64-bit","host":"mabe"}}
+
+{"t":{"$date":"2026-11-22T21:33:14.595-07:00"},"s":"I",  "c":"CONTROL",  "id":23398,   "ctx":"initandlisten","msg":"Target operating system minimum version","attr":{"targetMinOS":"Windows 7/Windows Server 2008 R2"}}
+
+{"t":{"$date":"2026-11-22T21:33:14.596-07:00"},"s":"I",  "c":"CONTROL",  "id":23403,   "ctx":"initandlisten","msg":"Build Info","attr":{"buildInfo":{"version":"8.0.5","gitVersion":"cb9e2e5e552ee39dea1e39d7859336456d0c9820","modules":[],"allocator":"tcmalloc-gperf","environment":{"distmod":"windows","distarch":"x86_64","target_arch":"x86_64"}}}}
+
+{"t":{"$date":"2026-11-22T21:33:14.596-07:00"},"s":"I",  "c":"CONTROL",  "id":51765,   "ctx":"initandlisten","msg":"Operating System","attr":{"os":{"name":"Microsoft Windows 10","version":"10.0 (build 26200)"}}}
+
+{"t":{"$date":"2026-11-22T21:33:14.596-07:00"},"s":"I",  "c":"CONTROL",  "id":21951,   "ctx":"initandlisten","msg":"Options set by command line","attr":{"options":{"config":"C:\\Program Files\\MongoDB\\Server\\8.0\\bin\\mongod.cfg","net":{"bindIp":"127.0.0.1","port":27017},"security":{"authorization":"enabled"},"service":true,"storage":{"dbPath":"C:\\Program Files\\MongoDB\\Server\\8.0\\data"},"systemLog":{"destination":"file","logAppend":true,"path":"C:\\Program Files\\MongoDB\\Server\\8.0\\log\\mongod.log"}}}}
+
+{"t":{"$date":"2026-11-22T21:33:14.622-07:00"},"s":"W",  "c":"STORAGE",  "id":22271,   "ctx":"initandlisten","msg":"Detected unclean shutdown - Lock file is not empty","attr":{"lockFile":"C:\\Program Files\\MongoDB\\Server\\8.0\\data\\mongod.lock"}}
+
+{"t":{"$date":"2026-11-22T21:33:14.625-07:00"},"s":"I",  "c":"STORAGE",  "id":22270,   "ctx":"initandlisten","msg":"Storage engine to use detected by data files","attr":{"dbpath":"C:/Program Files/MongoDB/Server/8.0/data","storageEngine":"wiredTiger"}}
+
+{"t":{"$date":"2026-11-22T21:33:14.626-07:00"},"s":"W",  "c":"STORAGE",  "id":22302,   "ctx":"initandlisten","msg":"Recovering data from the last clean checkpoint."}
+
+{"t":{"$date":"2026-11-22T21:33:14.629-07:00"},"s":"I",  "c":"STORAGE",  "id":22315,   "ctx":"initandlisten","msg":"Opening WiredTiger","attr":{"config":"create,cache_size=7349M,session_max=33000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,remove=true,path=journal,compressor=snappy),builtin_extension_config=(zstd=(compression_level=6)),file_manager=(close_idle_time=600,close_scan_interval=10,close_handle_minimum=2000),statistics_log=(wait=0),json_output=(error,message),verbose=[recovery_progress:1,checkpoint_progress:1,compact_progress:1,backup:0,checkpoint:0,compact:0,evict:0,history_store:0,recovery:0,rts:0,salvage:0,tiered:0,timestamp:0,transaction:0,verify:0,log:0],prefetch=(available=true,default=false),"}}
+
+{"t":{"$date":"2026-11-22T21:33:14.709-07:00"},"s":"I",  "c":"WTRECOV",  "id":22430,   "ctx":"initandlisten","msg":"WiredTiger message","attr":{"message":{"ts_sec":1795408394,"ts_usec":707987,"thread":"5476:140728550852128","session_name":"txn-recover","category":"WT_VERB_RECOVERY_PROGRESS","category_id":34,"verbose_level":"DEBUG_1","verbose_level_id":1,"msg":"Recovering log 54 through 55"}}}
+
+{"t":{"$date":"2026-11-22T21:33:14.890-07:00"},"s":"I",  "c":"WTRECOV",  "id":22430,   "ctx":"initandlisten","msg":"WiredTiger message","attr":{"message":{"ts_sec":1795408394,"ts_usec":889985,"thread":"5476:140728550852128","session_name":"txn-recover","category":"WT_VERB_RECOVERY_PROGRESS","category_id":34,"verbose_level":"DEBUG_1","verbose_level_id":1,"msg":"Recovering log 55 through 55"}}}
+
+{"t":{"$date":"2026-11-22T21:33:15.117-07:00"},"s":"I",  "c":"WTRECOV",  "id":22430,   "ctx":"initandlisten","msg":"WiredTiger message","attr":{"message":{"ts_sec":1795408395,"ts_usec":116977,"thread":"5476:140728550852128","session_name":"txn-recover","category":"WT_VERB_RECOVERY_PROGRESS","category_id":34,"verbose_level":"DEBUG_1","verbose_level_id":1,"msg":"Main recovery loop: starting at 54/92800 to 55/256"}}}
+
+{"t":{"$date":"2026-11-22T21:33:15.121-07:00"},"s":"I",  "c":"WTRECOV",  "id":22430,   "ctx":"initandlisten","msg":"WiredTiger message","attr":{"message":{"ts_sec":1795408395,"ts_usec":120985,"thread":"5476:140728550852128","session_name":"txn-recover","category":"WT_VERB_RECOVERY_PROGRESS","category_id":34,"verbose_level":"DEBUG_1","verbose_level_id":1,"msg":"Recovering log 54 through 55"}}}
+
+{"t":{"$date":"2026-11-22T21:33:15.296-07:00"},"s":"I",  "c":"WTRECOV",  "id":22430,   "ctx":"initandlisten","msg":"WiredTiger message","attr":{"message":{"ts_sec":1795408395,"ts_usec":294979,"thread":"5476:140728550852128","session_dhandle_name":"file:sizeStorer.wt","session_name":"txn-recover","category":"WT_VERB_RECOVERY_PROGRESS","category_id":34,"verbose_level":"DEBUG_1","verbose_level_id":1,"msg":"Recovering log 55 through 55"}}}
+
+{"t":{"$date":"2026-11-22T21:33:15.501-07:00"},"s":"I",  "c":"WTRECOV",  "id":22430,   "ctx":"initandlisten","msg":"WiredTiger message","attr":{"message":{"ts_sec":1795408395,"ts_usec":500986,"thread":"5476:140728550852128","session_dhandle_name":"file:sizeStorer.wt","session_name":"txn-recover","category":"WT_VERB_RECOVERY_PROGRESS","category_id":34,"verbose_level":"DEBUG_1","verbose_level_id":1,"msg":"recovery log replay has successfully finished and ran for 795 milliseconds"}}}
+
+{"t":{"$date":"2026-11-22T21:33:15.502-07:00"},"s":"I",  "c":"WTRECOV",  "id":22430,   "ctx":"initandlisten","msg":"WiredTiger message","attr":{"message":{"ts_sec":1795408395,"ts_usec":501983,"thread":"5476:140728550852128","session_dhandle_name":"file:sizeStorer.wt","session_name":"txn-recover","category":"WT_VERB_RECOVERY_PROGRESS","category_id":34,"verbose_level":"DEBUG_1","verbose_level_id":1,"msg":"Set global recovery timestamp: (0, 0)"}}}
+
+{"t":{"$date":"2026-11-22T21:33:15.502-07:00"},"s":"I",  "c":"WTRECOV",  "id":22430,   "ctx":"initandlisten","msg":"WiredTiger message","attr":{"message":{"ts_sec":1795408395,"ts_usec":501983,"thread":"5476:140728550852128","session_dhandle_name":"file:sizeStorer.wt","session_name":"txn-recover","category":"WT_VERB_RECOVERY_PROGRESS","category_id":34,"verbose_level":"DEBUG_1","verbose_level_id":1,"msg":"Set global oldest timestamp: (0, 0)"}}}
+
+{"t":{"$date":"2026-11-22T21:33:15.514-07:00"},"s":"I",  "c":"WTRECOV",  "id":22430,   "ctx":"initandlisten","msg":"WiredTiger message","attr":{"message":{"ts_sec":1795408395,"ts_usec":512989,"thread":"5476:140728550852128","session_dhandle_name":"file:sizeStorer.wt","session_name":"txn-recover","category":"WT_VERB_RECOVERY_PROGRESS","category_id":34,"verbose_level":"DEBUG_1","verbose_level_id":1,"msg":"recovery rollback to stable has successfully finished and ran for 10 milliseconds"}}}
+
+{"t":{"$date":"2026-11-22T21:33:15.524-07:00"},"s":"I",  "c":"WTCHKPT",  "id":22430,   "ctx":"initandlisten","msg":"WiredTiger message","attr":{"message":{"ts_sec":1795408395,"ts_usec":523987,"thread":"5476:140728550852128","session_name":"WT_SESSION.checkpoint","category":"WT_VERB_CHECKPOINT_PROGRESS","category_id":7,"verbose_level":"DEBUG_1","verbose_level_id":1,"msg":"saving checkpoint snapshot min: 13, snapshot max: 13 snapshot count: 0, oldest timestamp: (0, 0) , meta checkpoint timestamp: (0, 0) base write gen: 172136"}}}
+
+{"t":{"$date":"2026-11-22T21:33:15.542-07:00"},"s":"I",  "c":"WTRECOV",  "id":22430,   "ctx":"initandlisten","msg":"WiredTiger message","attr":{"message":{"ts_sec":1795408395,"ts_usec":541988,"thread":"5476:140728550852128","session_dhandle_name":"file:sizeStorer.wt","session_name":"txn-recover","category":"WT_VERB_RECOVERY_PROGRESS","category_id":34,"verbose_level":"DEBUG_1","verbose_level_id":1,"msg":"recovery checkpoint has successfully finished and ran for 28 milliseconds"}}}
+
+{"t":{"$date":"2026-11-22T21:33:15.543-07:00"},"s":"I",  "c":"WTRECOV",  "id":22430,   "ctx":"initandlisten","msg":"WiredTiger message","attr":{"message":{"ts_sec":1795408395,"ts_usec":541988,"thread":"5476:140728550852128","session_dhandle_name":"file:sizeStorer.wt","session_name":"txn-recover","category":"WT_VERB_RECOVERY_PROGRESS","category_id":34,"verbose_level":"DEBUG_1","verbose_level_id":1,"msg":"recovery was completed successfully and took 836ms, including 795ms for the log replay, 10ms for the rollback to stable, and 28ms for the checkpoint."}}}
+
+{"t":{"$date":"2026-11-22T21:33:15.549-07:00"},"s":"I",  "c":"STORAGE",  "id":4795906, "ctx":"initandlisten","msg":"WiredTiger opened","attr":{"durationMillis":920}}
+
+{"t":{"$date":"2026-11-22T21:33:15.549-07:00"},"s":"I",  "c":"RECOVERY", "id":23987,   "ctx":"initandlisten","msg":"WiredTiger recoveryTimestamp","attr":{"recoveryTimestamp":{"$timestamp":{"t":0,"i":0}}}}
+
+{"t":{"$date":"2026-11-22T21:33:15.559-07:00"},"s":"I",  "c":"STORAGE",  "id":9529901, "ctx":"initandlisten","msg":"Initializing durable catalog","attr":{"numRecords":18}}
+
+{"t":{"$date":"2026-11-22T21:33:15.566-07:00"},"s":"I",  "c":"STORAGE",  "id":9529902, "ctx":"initandlisten","msg":"Retrieving all idents from storage engine"}
+
+{"t":{"$date":"2026-11-22T21:33:15.568-07:00"},"s":"I",  "c":"STORAGE",  "id":9529903, "ctx":"initandlisten","msg":"Initializing all collections in durable catalog","attr":{"numEntries":18}}
+
+{"t":{"$date":"2026-11-22T21:33:15.668-07:00"},"s":"I",  "c":"NETWORK",  "id":4915702, "ctx":"initandlisten","msg":"Updated wire specification","attr":{"oldSpec":{"incomingExternalClient":{"minWireVersion":0,"maxWireVersion":25},"incomingInternalClient":{"minWireVersion":0,"maxWireVersion":25},"outgoing":{"minWireVersion":6,"maxWireVersion":25},"isInternalClient":true},"newSpec":{"incomingExternalClient":{"minWireVersion":0,"maxWireVersion":25},"incomingInternalClient":{"minWireVersion":25,"maxWireVersion":25},"outgoing":{"minWireVersion":25,"maxWireVersion":25},"isInternalClient":true}}}
+
+{"t":{"$date":"2026-11-22T21:33:15.668-07:00"},"s":"I",  "c":"REPL",     "id":5853300, "ctx":"initandlisten","msg":"current featureCompatibilityVersion value","attr":{"featureCompatibilityVersion":"8.0","context":"startup"}}
+
+{"t":{"$date":"2026-11-22T21:33:15.671-07:00"},"s":"I",  "c":"STORAGE",  "id":5071100, "ctx":"initandlisten","msg":"Clearing temp directory"}
+
+{"t":{"$date":"2026-11-22T21:33:15.714-07:00"},"s":"I",  "c":"CONTROL",  "id":6608200, "ctx":"initandlisten","msg":"Initializing cluster server parameters from disk"}
+
+{"t":{"$date":"2026-11-22T21:33:15.714-07:00"},"s":"I",  "c":"CONTROL",  "id":20536,   "ctx":"initandlisten","msg":"Flow Control is enabled on this deployment"}
+
+{"t":{"$date":"2026-11-22T21:33:20.319-07:00"},"s":"W",  "c":"FTDC",     "id":23718,   "ctx":"initandlisten","msg":"Failed to initialize Performance Counters for FTDC","attr":{"error":{"code":179,"codeName":"WindowsPdhError","errmsg":"PdhAddEnglishCounterW failed with 'El objeto especificado no se encontró en el equipo.'"}}}
+
+{"t":{"$date":"2026-11-22T21:33:20.320-07:00"},"s":"I",  "c":"FTDC",     "id":20625,   "ctx":"initandlisten","msg":"Initializing full-time diagnostic data capture","attr":{"dataDirectory":"C:/Program Files/MongoDB/Server/8.0/data/diagnostic.data"}}
+
+{"t":{"$date":"2026-11-22T21:33:20.363-07:00"},"s":"I",  "c":"REPL",     "id":6015317, "ctx":"initandlisten","msg":"Setting new configuration state","attr":{"newState":"ConfigReplicationDisabled","oldState":"ConfigPreStart"}}
+
+{"t":{"$date":"2026-11-22T21:33:20.363-07:00"},"s":"I",  "c":"STORAGE",  "id":22262,   "ctx":"initandlisten","msg":"Timestamp monitor starting"}
+
+{"t":{"$date":"2026-11-22T21:33:20.365-07:00"},"s":"I",  "c":"STORAGE",  "id":7333401, "ctx":"initandlisten","msg":"Starting the DiskSpaceMonitor"}
+
+{"t":{"$date":"2026-11-22T21:33:20.374-07:00"},"s":"I",  "c":"NETWORK",  "id":23015,   "ctx":"listener","msg":"Listening on","attr":{"address":"127.0.0.1:27017"}}
+
+{"t":{"$date":"2026-11-22T21:33:20.374-07:00"},"s":"I",  "c":"NETWORK",  "id":23016,   "ctx":"listener","msg":"Waiting for connections","attr":{"port":27017,"ssl":"off"}}
+
+{"t":{"$date":"2026-11-22T21:33:20.375-07:00"},"s":"I",  "c":"CONTROL",  "id":20555,   "ctx":"initandlisten","msg":"Service running"}
+
+{"t":{"$date":"2026-11-22T21:33:20.375-07:00"},"s":"I",  "c":"CONTROL",  "id":8423403, "ctx":"initandlisten","msg":"mongod startup complete","attr":{"Summary of time elapsed":{"Startup from clean shutdown?":false,"Statistics":{"Set up periodic runner":"0 ms","Set up online certificate status protocol manager":"0 ms","Transport layer setup":"0 ms","Run initial syncer crash recovery":"0 ms","Create storage engine lock file in the data directory":"4 ms","Get metadata describing storage engine":"0 ms","Validate options in metadata against current startup options":"0 ms","Create storage engine":"985 ms","Write current PID to file":"0 ms","Initialize FCV before rebuilding indexes":"49 ms","Drop abandoned idents and get back indexes that need to be rebuilt or builds that need to be restarted":"0 ms","Rebuild indexes for collections":"0 ms","Load cluster parameters from disk for a standalone":"1 ms","Build user and roles graph":"0 ms","Verify indexes for admin.system.users collection":"0 ms","Set up the background thread pool responsible for waiting for opTimes to be majority committed":"2 ms","Start up the replication coordinator":"8 ms","Ensure the change stream collections on startup contain consistent data":"0 ms","Write startup options to the audit log":"0 ms","Start transport layer":"2 ms","_initAndListen total elapsed time":"5780 ms"}}}}
+
+{"t":{"$date":"2026-11-22T21:33:21.078-07:00"},"s":"I",  "c":"FTDC",     "id":20631,   "ctx":"ftdc","msg":"Unclean full-time diagnostic data capture shutdown detected, found interim file, some metrics may have been lost","attr":{"error":{"code":0,"codeName":"OK"}}}
+
+{"t":{"$date":"2026-11-22T21:33:21.871-07:00"},"s":"W",  "c":"CONTROL",  "id":636300,  "ctx":"ftdc","msg":"Use of deprecated server parameter name","attr":{"deprecatedName":"internalQueryCacheSize","canonicalName":"internalQueryCacheMaxEntriesPerCollection"}}
+
+{"t":{"$date":"2026-11-22T21:33:21.884-07:00"},"s":"W",  "c":"CONTROL",  "id":636300,  "ctx":"ftdc","msg":"Use of deprecated server parameter name","attr":{"deprecatedName":"oplogSamplingLogIntervalSeconds","canonicalName":"collectionSamplingLogIntervalSeconds"}}
+
+{"t":{"$date":"2026-11-22T21:33:21.885-07:00"},"s":"W",  "c":"NETWORK",  "id":23803,   "ctx":"ftdc","msg":"Use of deprecated server parameter 'sslMode', please use 'tlsMode' instead."}
+
+{"t":{"$date":"2026-11-22T21:33:21.885-07:00"},"s":"W",  "c":"CONTROL",  "id":636300,  "ctx":"ftdc","msg":"Use of deprecated server parameter name","attr":{"deprecatedName":"wiredTigerConcurrentReadTransactions","canonicalName":"storageEngineConcurrentReadTransactions"}}
+
+{"t":{"$date":"2026-11-22T21:33:21.886-07:00"},"s":"W",  "c":"CONTROL",  "id":636300,  "ctx":"ftdc","msg":"Use of deprecated server parameter name","attr":{"deprecatedName":"wiredTigerConcurrentWriteTransactions","canonicalName":"storageEngineConcurrentWriteTransactions"}}
+
+{"t":{"$date":"2026-11-22T21:34:15.624-07:00"},"s":"I",  "c":"WTCHKPT",  "id":22430,   "ctx":"Checkpointer","msg":"WiredTiger message","attr":{"message":{"ts_sec":1795408455,"ts_usec":623439,"thread":"5476:140728550852128","session_name":"WT_SESSION.checkpoint","category":"WT_VERB_CHECKPOINT_PROGRESS","category_id":7,"verbose_level":"DEBUG_1","verbose_level_id":1,"msg":"saving checkpoint snapshot min: 16, snapshot max: 16 snapshot count: 0, oldest timestamp: (0, 0) , meta checkpoint timestamp: (0, 0) base write gen: 172136"}}}
+
+{"t":{"$date":"2026-11-22T21:34:44.229-07:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:3439","uuid":{"uuid":{"$uuid":"d7dde997-620a-4e49-8312-781b48910c68"}},"connectionId":1,"connectionCount":1}}
+
+{"t":{"$date":"2026-11-22T21:34:44.296-07:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn1","msg":"client metadata","attr":{"remote":"127.0.0.1:3439","client":"conn1","negotiatedCompressors":[],"doc":{"application":{"name":"MongoDB Compass"},"driver":{"name":"nodejs","version":"7.5.0"},"platform":"Node.js v24.22.2, LE","os":{"name":"win32","architecture":"x64","version":"10.0.26200","type":"Windows_NT"}}}}
+
+{"t":{"$date":"2026-11-22T21:34:44.314-07:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:3440","uuid":{"uuid":{"$uuid":"06f226f7-fdb4-4087-a88a-81e8724f8a42"}},"connectionId":2,"connectionCount":2}}
+
+{"t":{"$date":"2026-11-22T21:34:44.327-07:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn2","msg":"client metadata","attr":{"remote":"127.0.0.1:3440","client":"conn2","negotiatedCompressors":[],"doc":{"application":{"name":"MongoDB Compass"},"driver":{"name":"nodejs","version":"7.5.0"},"platform":"Node.js v24.22.2, LE","os":{"name":"win32","architecture":"x64","version":"10.0.26200","type":"Windows_NT"}}}}
+
+{"t":{"$date":"2026-11-22T21:34:44.448-07:00"},"s":"I",  "c":"ACCESS",   "id":6788604, "ctx":"conn2","msg":"Auth metrics report","attr":{"metric":"acquireUser","micros":0}}
+
+{"t":{"$date":"2026-11-22T21:34:44.450-07:00"},"s":"I",  "c":"COMMAND",  "id":51803,   "ctx":"conn2","msg":"Slow query","attr":{"type":"command","isFromUserConnection":true,"ns":"admin.$cmd","collectionType":"admin","appName":"MongoDB Compass","command":{"ismaster":1,"backpressure":true,"helloOk":true,"client":{"application":{"name":"MongoDB Compass"},"driver":{"name":"nodejs","version":"7.5.0"},"platform":"Node.js v24.22.2, LE","os":{"name":"win32","architecture":"x64","version":"10.0.26200","type":"Windows_NT"}},"compression":["none"],"saslSupportedMechs":"admin.admin","speculativeAuthenticate":{"saslStart":1,"mechanism":"SCRAM-SHA-256","payload":{"$binary":{"base64":"biwsbj1hZG1pbixyPXJvczlqQ05NaFMvL2ZPMFBEdDF5UUUzRVIwY2JyQkdF","subType":"0"}},"autoAuthorize":1,"options":{"skipEmptyExchange":true},"db":"admin"},"$db":"admin"},"numYields":0,"reslen":582,"locks":{},"authorization":{"startedUserCacheAcquisitionAttempts":2,"completedUserCacheAcquisitionAttempts":2,"userCacheWaitTimeMicros":120589},"remote":"127.0.0.1:3440","protocol":"op_query","queues":{"ingress":{"admissions":1},"execution":{}},"workingMillis":122,"durationMillis":122}}
+
+{"t":{"$date":"2026-11-22T21:34:44.486-07:00"},"s":"I",  "c":"ACCESS",   "id":5286306, "ctx":"conn2","msg":"Successfully authenticated","attr":{"client":"127.0.0.1:3440","isSpeculative":true,"isClusterMember":false,"mechanism":"SCRAM-SHA-256","user":"admin","db":"admin","result":0,"metrics":{"conversation_duration":{"micros":38133,"summary":{"0":{"step":1,"step_total":2,"duration_micros":1340},"1":{"step":2,"step_total":2,"duration_micros":70}}}},"extraInfo":{}}}
+
+{"t":{"$date":"2026-11-22T21:34:44.526-07:00"},"s":"I",  "c":"NETWORK",  "id":6788700, "ctx":"conn2","msg":"Received first command on ingress connection since session start or auth handshake","attr":{"elapsedMillis":40}}
+
+{"t":{"$date":"2026-11-22T21:34:44.527-07:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:3442","uuid":{"uuid":{"$uuid":"3bd476e7-b976-4c3d-ae0a-3566f4849075"}},"connectionId":3,"connectionCount":3}}
+
+{"t":{"$date":"2026-11-22T21:34:44.528-07:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:3443","uuid":{"uuid":{"$uuid":"1170c3c3-2635-4991-b8ee-cb57329a482a"}},"connectionId":4,"connectionCount":4}}
+
+{"t":{"$date":"2026-11-22T21:34:44.544-07:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn3","msg":"client metadata","attr":{"remote":"127.0.0.1:3442","client":"conn3","negotiatedCompressors":[],"doc":{"application":{"name":"MongoDB Compass"},"driver":{"name":"nodejs","version":"7.5.0"},"platform":"Node.js v24.22.2, LE","os":{"name":"win32","architecture":"x64","version":"10.0.26200","type":"Windows_NT"}}}}
+
+{"t":{"$date":"2026-11-22T21:34:44.544-07:00"},"s":"I",  "c":"ACCESS",   "id":6788604, "ctx":"conn3","msg":"Auth metrics report","attr":{"metric":"acquireUser","micros":0}}
+
+{"t":{"$date":"2026-11-22T21:34:44.557-07:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn4","msg":"client metadata","attr":{"remote":"127.0.0.1:3443","client":"conn4","negotiatedCompressors":[],"doc":{"application":{"name":"MongoDB Compass"},"driver":{"name":"nodejs","version":"7.5.0"},"platform":"Node.js v24.22.2, LE","os":{"name":"win32","architecture":"x64","version":"10.0.26200","type":"Windows_NT"}}}}
+
+{"t":{"$date":"2026-11-22T21:34:44.557-07:00"},"s":"I",  "c":"ACCESS",   "id":6788604, "ctx":"conn4","msg":"Auth metrics report","attr":{"metric":"acquireUser","micros":0}}
+
+{"t":{"$date":"2026-11-22T21:34:44.570-07:00"},"s":"I",  "c":"ACCESS",   "id":5286306, "ctx":"conn4","msg":"Successfully authenticated","attr":{"client":"127.0.0.1:3443","isSpeculative":true,"isClusterMember":false,"mechanism":"SCRAM-SHA-256","user":"admin","db":"admin","result":0,"metrics":{"conversation_duration":{"micros":12222,"summary":{"0":{"step":1,"step_total":2,"duration_micros":359},"1":{"step":2,"step_total":2,"duration_micros":49}}}},"extraInfo":{}}}
+
+{"t":{"$date":"2026-11-22T21:34:44.573-07:00"},"s":"I",  "c":"ACCESS",   "id":5286306, "ctx":"conn3","msg":"Successfully authenticated","attr":{"client":"127.0.0.1:3442","isSpeculative":true,"isClusterMember":false,"mechanism":"SCRAM-SHA-256","user":"admin","db":"admin","result":0,"metrics":{"conversation_duration":{"micros":28672,"summary":{"0":{"step":1,"step_total":2,"duration_micros":377},"1":{"step":2,"step_total":2,"duration_micros":51}}}},"extraInfo":{}}}
+
+{"t":{"$date":"2026-11-22T21:34:44.586-07:00"},"s":"I",  "c":"NETWORK",  "id":6788700, "ctx":"conn4","msg":"Received first command on ingress connection since session start or auth handshake","attr":{"elapsedMillis":16}}
+
+{"t":{"$date":"2026-11-22T21:34:44.588-07:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:3444","uuid":{"uuid":{"$uuid":"a4684efe-fc2d-453e-bec2-38ff0409f3de"}},"connectionId":5,"connectionCount":5}}
+
+{"t":{"$date":"2026-11-22T21:34:44.591-07:00"},"s":"I",  "c":"NETWORK",  "id":6788700, "ctx":"conn3","msg":"Received first command on ingress connection since session start or auth handshake","attr":{"elapsedMillis":18}}
+
+{"t":{"$date":"2026-11-22T21:34:44.592-07:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:3445","uuid":{"uuid":{"$uuid":"62245926-da53-43ff-8209-eeef4983e727"}},"connectionId":6,"connectionCount":6}}
+
+{"t":{"$date":"2026-11-22T21:34:44.609-07:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn6","msg":"client metadata","attr":{"remote":"127.0.0.1:3445","client":"conn6","negotiatedCompressors":[],"doc":{"application":{"name":"MongoDB Compass"},"driver":{"name":"nodejs","version":"7.5.0"},"platform":"Node.js v24.22.2, LE","os":{"name":"win32","architecture":"x64","version":"10.0.26200","type":"Windows_NT"}}}}
+
+{"t":{"$date":"2026-11-22T21:34:44.609-07:00"},"s":"I",  "c":"ACCESS",   "id":6788604, "ctx":"conn6","msg":"Auth metrics report","attr":{"metric":"acquireUser","micros":0}}
+
+{"t":{"$date":"2026-11-22T21:34:44.614-07:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn5","msg":"client metadata","attr":{"remote":"127.0.0.1:3444","client":"conn5","negotiatedCompressors":[],"doc":{"application":{"name":"MongoDB Compass"},"driver":{"name":"nodejs","version":"7.5.0"},"platform":"Node.js v24.22.2, LE","os":{"name":"win32","architecture":"x64","version":"10.0.26200","type":"Windows_NT"}}}}
+
+{"t":{"$date":"2026-11-22T21:34:44.615-07:00"},"s":"I",  "c":"ACCESS",   "id":6788604, "ctx":"conn5","msg":"Auth metrics report","attr":{"metric":"acquireUser","micros":0}}
+
+{"t":{"$date":"2026-11-22T21:34:44.625-07:00"},"s":"I",  "c":"ACCESS",   "id":5286306, "ctx":"conn6","msg":"Successfully authenticated","attr":{"client":"127.0.0.1:3445","isSpeculative":true,"isClusterMember":false,"mechanism":"SCRAM-SHA-256","user":"admin","db":"admin","result":0,"metrics":{"conversation_duration":{"micros":16191,"summary":{"0":{"step":1,"step_total":2,"duration_micros":340},"1":{"step":2,"step_total":2,"duration_micros":47}}}},"extraInfo":{}}}
+
+{"t":{"$date":"2026-11-22T21:34:44.627-07:00"},"s":"I",  "c":"ACCESS",   "id":5286306, "ctx":"conn5","msg":"Successfully authenticated","attr":{"client":"127.0.0.1:3444","isSpeculative":true,"isClusterMember":false,"mechanism":"SCRAM-SHA-256","user":"admin","db":"admin","result":0,"metrics":{"conversation_duration":{"micros":12467,"summary":{"0":{"step":1,"step_total":2,"duration_micros":375},"1":{"step":2,"step_total":2,"duration_micros":39}}}},"extraInfo":{}}}
+
+{"t":{"$date":"2026-11-22T21:34:44.629-07:00"},"s":"I",  "c":"NETWORK",  "id":6788700, "ctx":"conn6","msg":"Received first command on ingress connection since session start or auth handshake","attr":{"elapsedMillis":4}}
+
+{"t":{"$date":"2026-11-22T21:34:44.638-07:00"},"s":"I",  "c":"NETWORK",  "id":6788700, "ctx":"conn5","msg":"Received first command on ingress connection since session start or auth handshake","attr":{"elapsedMillis":10}}
+
+{"t":{"$date":"2026-11-22T21:34:44.830-07:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:3446","uuid":{"uuid":{"$uuid":"d5d99906-9e75-4c67-9883-5c18da0f566e"}},"connectionId":7,"connectionCount":7}}
+
+{"t":{"$date":"2026-11-22T21:34:44.831-07:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:3447","uuid":{"uuid":{"$uuid":"7070729c-b91b-4ada-9aa8-5177278534cf"}},"connectionId":8,"connectionCount":8}}
+
+{"t":{"$date":"2026-11-22T21:34:44.900-07:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn7","msg":"client metadata","attr":{"remote":"127.0.0.1:3446","client":"conn7","negotiatedCompressors":[],"doc":{"application":{"name":"MongoDB Compass"},"driver":{"name":"nodejs","version":"7.5.0"},"platform":"Node.js v24.22.2, LE","os":{"name":"win32","architecture":"x64","version":"10.0.26200","type":"Windows_NT"}}}}
+
+{"t":{"$date":"2026-11-22T21:34:44.901-07:00"},"s":"I",  "c":"ACCESS",   "id":6788604, "ctx":"conn7","msg":"Auth metrics report","attr":{"metric":"acquireUser","micros":0}}
+
+{"t":{"$date":"2026-11-22T21:34:44.903-07:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn8","msg":"client metadata","attr":{"remote":"127.0.0.1:3447","client":"conn8","negotiatedCompressors":[],"doc":{"application":{"name":"MongoDB Compass"},"driver":{"name":"nodejs","version":"7.5.0"},"platform":"Node.js v24.22.2, LE","os":{"name":"win32","architecture":"x64","version":"10.0.26200","type":"Windows_NT"}}}}
+
+{"t":{"$date":"2026-11-22T21:34:44.903-07:00"},"s":"I",  "c":"ACCESS",   "id":6788604, "ctx":"conn8","msg":"Auth metrics report","attr":{"metric":"acquireUser","micros":0}}
+
+{"t":{"$date":"2026-11-22T21:34:44.936-07:00"},"s":"I",  "c":"ACCESS",   "id":5286306, "ctx":"conn7","msg":"Successfully authenticated","attr":{"client":"127.0.0.1:3446","isSpeculative":true,"isClusterMember":false,"mechanism":"SCRAM-SHA-256","user":"admin","db":"admin","result":0,"metrics":{"conversation_duration":{"micros":35653,"summary":{"0":{"step":1,"step_total":2,"duration_micros":458},"1":{"step":2,"step_total":2,"duration_micros":59}}}},"extraInfo":{}}}
+
+{"t":{"$date":"2026-11-22T21:34:44.939-07:00"},"s":"I",  "c":"ACCESS",   "id":5286306, "ctx":"conn8","msg":"Successfully authenticated","attr":{"client":"127.0.0.1:3447","isSpeculative":true,"isClusterMember":false,"mechanism":"SCRAM-SHA-256","user":"admin","db":"admin","result":0,"metrics":{"conversation_duration":{"micros":35684,"summary":{"0":{"step":1,"step_total":2,"duration_micros":415},"1":{"step":2,"step_total":2,"duration_micros":54}}}},"extraInfo":{}}}
+
+{"t":{"$date":"2026-11-22T21:34:44.954-07:00"},"s":"I",  "c":"NETWORK",  "id":6788700, "ctx":"conn8","msg":"Received first command on ingress connection since session start or auth handshake","attr":{"elapsedMillis":15}}
+
+{"t":{"$date":"2026-11-22T21:34:44.956-07:00"},"s":"I",  "c":"NETWORK",  "id":6788700, "ctx":"conn7","msg":"Received first command on ingress connection since session start or auth handshake","attr":{"elapsedMillis":19}}
+
+{"t":{"$date":"2026-11-22T21:34:52.031-07:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:28492","uuid":{"uuid":{"$uuid":"18d84714-3a19-4d50-bc17-232de4ad90a4"}},"connectionId":9,"connectionCount":9}}
+
+{"t":{"$date":"2026-11-22T21:34:52.050-07:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn9","msg":"client metadata","attr":{"remote":"127.0.0.1:28492","client":"conn9","negotiatedCompressors":[],"doc":{"application":{"name":"MongoDB Compass"},"driver":{"name":"nodejs","version":"7.5.0"},"platform":"Node.js v24.22.2, LE","os":{"name":"win32","architecture":"x64","version":"10.0.26200","type":"Windows_NT"}}}}
+
+{"t":{"$date":"2026-11-22T21:34:52.073-07:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:28493","uuid":{"uuid":{"$uuid":"42c0f44a-4853-43f9-b3b7-945cd1253d39"}},"connectionId":10,"connectionCount":10}}
+
+{"t":{"$date":"2026-11-22T21:34:52.078-07:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn10","msg":"client metadata","attr":{"remote":"127.0.0.1:28493","client":"conn10","negotiatedCompressors":[],"doc":{"application":{"name":"MongoDB Compass"},"driver":{"name":"nodejs","version":"7.5.0"},"platform":"Node.js v24.22.2, LE","os":{"name":"win32","architecture":"x64","version":"10.0.26200","type":"Windows_NT"}}}}
+
+{"t":{"$date":"2026-11-22T21:34:52.079-07:00"},"s":"I",  "c":"ACCESS",   "id":6788604, "ctx":"conn10","msg":"Auth metrics report","attr":{"metric":"acquireUser","micros":0}}
+
+{"t":{"$date":"2026-11-22T21:34:52.116-07:00"},"s":"I",  "c":"ACCESS",   "id":5286306, "ctx":"conn10","msg":"Successfully authenticated","attr":{"client":"127.0.0.1:28493","isSpeculative":true,"isClusterMember":false,"mechanism":"SCRAM-SHA-256","user":"admin","db":"admin","result":0,"metrics":{"conversation_duration":{"micros":36980,"summary":{"0":{"step":1,"step_total":2,"duration_micros":484},"1":{"step":2,"step_total":2,"duration_micros":50}}}},"extraInfo":{}}}
+
+{"t":{"$date":"2026-11-22T21:34:52.594-07:00"},"s":"I",  "c":"NETWORK",  "id":6788700, "ctx":"conn10","msg":"Received first command on ingress connection since session start or auth handshake","attr":{"elapsedMillis":478}}
+
+{"t":{"$date":"2026-11-22T21:34:52.596-07:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:2656","uuid":{"uuid":{"$uuid":"cacb7544-0ff9-4ee2-8aa2-09e41dac1203"}},"connectionId":11,"connectionCount":11}}
+
+{"t":{"$date":"2026-11-22T21:34:52.597-07:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:2657","uuid":{"uuid":{"$uuid":"bff73c29-ed67-47e6-8b8d-ac812061709f"}},"connectionId":12,"connectionCount":12}}
+
+{"t":{"$date":"2026-11-22T21:34:52.603-07:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn11","msg":"client metadata","attr":{"remote":"127.0.0.1:2656","client":"conn11","negotiatedCompressors":[],"doc":{"application":{"name":"MongoDB Compass"},"driver":{"name":"nodejs","version":"7.5.0"},"platform":"Node.js v24.22.2, LE","os":{"name":"win32","architecture":"x64","version":"10.0.26200","type":"Windows_NT"}}}}
+
+{"t":{"$date":"2026-11-22T21:34:52.604-07:00"},"s":"I",  "c":"ACCESS",   "id":6788604, "ctx":"conn11","msg":"Auth metrics report","attr":{"metric":"acquireUser","micros":0}}
+
+{"t":{"$date":"2026-11-22T21:34:52.605-07:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn12","msg":"client metadata","attr":{"remote":"127.0.0.1:2657","client":"conn12","negotiatedCompressors":[],"doc":{"application":{"name":"MongoDB Compass"},"driver":{"name":"nodejs","version":"7.5.0"},"platform":"Node.js v24.22.2, LE","os":{"name":"win32","architecture":"x64","version":"10.0.26200","type":"Windows_NT"}}}}
+
+{"t":{"$date":"2026-11-22T21:34:52.606-07:00"},"s":"I",  "c":"ACCESS",   "id":6788604, "ctx":"conn12","msg":"Auth metrics report","attr":{"metric":"acquireUser","micros":0}}
+
+{"t":{"$date":"2026-11-22T21:34:52.620-07:00"},"s":"I",  "c":"ACCESS",   "id":5286306, "ctx":"conn11","msg":"Successfully authenticated","attr":{"client":"127.0.0.1:2656","isSpeculative":true,"isClusterMember":false,"mechanism":"SCRAM-SHA-256","user":"admin","db":"admin","result":0,"metrics":{"conversation_duration":{"micros":16218,"summary":{"0":{"step":1,"step_total":2,"duration_micros":424},"1":{"step":2,"step_total":2,"duration_micros":41}}}},"extraInfo":{}}}
+
+{"t":{"$date":"2026-11-22T21:34:52.621-07:00"},"s":"I",  "c":"ACCESS",   "id":5286306, "ctx":"conn12","msg":"Successfully authenticated","attr":{"client":"127.0.0.1:2657","isSpeculative":true,"isClusterMember":false,"mechanism":"SCRAM-SHA-256","user":"admin","db":"admin","result":0,"metrics":{"conversation_duration":{"micros":14932,"summary":{"0":{"step":1,"step_total":2,"duration_micros":293},"1":{"step":2,"step_total":2,"duration_micros":53}}}},"extraInfo":{}}}
+
+{"t":{"$date":"2026-11-22T21:34:52.624-07:00"},"s":"I",  "c":"NETWORK",  "id":6788700, "ctx":"conn12","msg":"Received first command on ingress connection since session start or auth handshake","attr":{"elapsedMillis":3}}
+
+{"t":{"$date":"2026-11-22T21:34:54.898-07:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:4423","uuid":{"uuid":{"$uuid":"5ec73ae3-4355-4341-a481-1d88cde64a48"}},"connectionId":13,"connectionCount":13}}
+
+{"t":{"$date":"2026-11-22T21:34:54.901-07:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn13","msg":"client metadata","attr":{"remote":"127.0.0.1:4423","client":"conn13","negotiatedCompressors":[],"doc":{"application":{"name":"MongoDB Compass"},"driver":{"name":"nodejs","version":"7.5.0"},"platform":"Node.js v24.22.2, LE","os":{"name":"win32","architecture":"x64","version":"10.0.26200","type":"Windows_NT"}}}}
+
+{"t":{"$date":"2026-11-22T21:35:02.580-07:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:4484","uuid":{"uuid":{"$uuid":"ea67967c-262a-401d-b6f7-04906847ed17"}},"connectionId":14,"connectionCount":14}}
+
+{"t":{"$date":"2026-11-22T21:35:02.582-07:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn14","msg":"client metadata","attr":{"remote":"127.0.0.1:4484","client":"conn14","negotiatedCompressors":[],"doc":{"application":{"name":"MongoDB Compass"},"driver":{"name":"nodejs","version":"7.5.0"},"platform":"Node.js v24.22.2, LE","os":{"name":"win32","architecture":"x64","version":"10.0.26200","type":"Windows_NT"}}}}
+
+{"t":{"$date":"2026-11-22T21:35:15.669-07:00"},"s":"I",  "c":"WTCHKPT",  "id":22430,   "ctx":"Checkpointer","msg":"WiredTiger message","attr":{"message":{"ts_sec":1795408515,"ts_usec":669399,"thread":"5476:140728550852128","session_name":"WT_SESSION.checkpoint","category":"WT_VERB_CHECKPOINT_PROGRESS","category_id":7,"verbose_level":"DEBUG_1","verbose_level_id":1,"msg":"saving checkpoint snapshot min: 17, snapshot max: 17 snapshot count: 0, oldest timestamp: (0, 0) , meta checkpoint timestamp: (0, 0) base write gen: 172136"}}}
+
+{"t":{"$date":"2026-11-22T21:36:15.732-07:00"},"s":"I",  "c":"WTCHKPT",  "id":22430,   "ctx":"Checkpointer","msg":"WiredTiger message","attr":{"message":{"ts_sec":1795408575,"ts_usec":731570,"thread":"5476:140728550852128","session_name":"WT_SESSION.checkpoint","category":"WT_VERB_CHECKPOINT_PROGRESS","category_id":7,"verbose_level":"DEBUG_1","verbose_level_id":1,"msg":"saving checkpoint snapshot min: 18, snapshot max: 18 snapshot count: 0, oldest timestamp: (0, 0) , meta checkpoint timestamp: (0, 0) base write gen: 172136"}}}
+
+{"t":{"$date":"2026-11-22T21:37:15.780-07:00"},"s":"I",  "c":"WTCHKPT",  "id":22430,   "ctx":"Checkpointer","msg":"WiredTiger message","attr":{"message":{"ts_sec":1795408635,"ts_usec":779643,"thread":"5476:140728550852128","session_name":"WT_SESSION.checkpoint","category":"WT_VERB_CHECKPOINT_PROGRESS","category_id":7,"verbose_level":"DEBUG_1","verbose_level_id":1,"msg":"saving checkpoint snapshot min: 19, snapshot max: 19 snapshot count: 0, oldest timestamp: (0, 0) , meta checkpoint timestamp: (0, 0) base write gen: 172136"}}}
+
+{"t":{"$date":"2026-11-22T21:37:25.954-07:00"},"s":"I",  "c":"NETWORK",  "id":6788700, "ctx":"conn11","msg":"Received first command on ingress connection since session start or auth handshake","attr":{"elapsedMillis":153334}}
+
+{"t":{"$date":"2026-11-22T21:38:15.831-07:00"},"s":"I",  "c":"WTCHKPT",  "id":22430,   "ctx":"Checkpointer","msg":"WiredTiger message","attr":{"message":{"ts_sec":1795408695,"ts_usec":830886,"thread":"5476:140728550852128","session_name":"WT_SESSION.checkpoint","category":"WT_VERB_CHECKPOINT_PROGRESS","category_id":7,"verbose_level":"DEBUG_1","verbose_level_id":1,"msg":"saving checkpoint snapshot min: 20, snapshot max: 20 snapshot count: 0, oldest timestamp: (0, 0) , meta checkpoint timestamp: (0, 0) base write gen: 172136"}}}
+
+{"t":{"$date":"2026-11-22T21:38:20.517-07:00"},"s":"I",  "c":"WRITE",    "id":51803,   "ctx":"LogicalSessionCacheRefresh","msg":"Slow query","attr":{"type":"update","isFromUserConnection":false,"ns":"config.system.sessions","collectionType":"system","command":{"q":{"_id":{"id":{"$uuid":"a090d1dc-eb32-4c51-86c7-9eacb960a4c9"},"uid":{"$binary":{"base64":"O0CMtIVItQN4IsEOsJdrPL8s7jv5xwh5a/A5Qfvs2A8=","subType":"0"}}}},"u":[{"$set":{"lastUse":"$$NOW"}},{"$set":{"user":{"name":"admin@admin"}}}],"multi":false,"upsert":true},"planSummary":"IDHACK","planningTimeMicros":25169,"keysExamined":0,"docsExamined":0,"nMatched":0,"nModified":0,"nUpserted":1,"keysInserted":2,"numYields":0,"locks":{"ReplicationStateTransition":{"acquireCount":{"w":1}},"Global":{"acquireCount":{"r":1,"w":1}},"Database":{"acquireCount":{"w":1}},"Collection":{"acquireCount":{"w":1}}},"flowControl":{"acquireCount":1},"storage":{"data":{"bytesRead":503,"timeReadingMicros":987,"txnBytesDirty":1887}},"queues":{"ingress":{"admissions":2},"execution":{"admissions":3}},"workingMillis":131,"durationMillis":131}}
+
+{"t":{"$date":"2026-11-22T21:38:20.523-07:00"},"s":"I",  "c":"COMMAND",  "id":51803,   "ctx":"LogicalSessionCacheRefresh","msg":"Slow query","attr":{"type":"command","isFromUserConnection":false,"ns":"config.$cmd","collectionType":"config","command":{"update":"system.sessions","ordered":false,"writeConcern":{"w":"majority","wtimeout":60000},"$db":"config"},"numYields":0,"reslen":747,"locks":{"ReplicationStateTransition":{"acquireCount":{"w":7}},"Global":{"acquireCount":{"r":2,"w":7}},"Database":{"acquireCount":{"w":7}},"Collection":{"acquireCount":{"w":7}}},"flowControl":{"acquireCount":7},"writeConcern":{"w":"majority","wtimeout":60000,"provenance":"clientSupplied"},"storage":{"data":{"txnBytesDirty":-1416}},"protocol":"op_msg","queues":{"ingress":{"admissions":2},"execution":{"admissions":10}},"workingMillis":136,"durationMillis":136}}
+
+{"t":{"$date":"2026-11-22T21:38:23.124-07:00"},"s":"I",  "c":"COMMAND",  "id":48742,   "ctx":"conn12","msg":"Profiler settings changed","attr":{"from":{"level":0,"slowms":100,"sampleRate":1},"to":{"level":2,"slowms":100,"sampleRate":1},"db":"comercial"}}
+
+{"t":{"$date":"2026-11-22T21:38:45.497-07:00"},"s":"I",  "c":"COMMAND",  "id":48742,   "ctx":"conn12","msg":"Profiler settings changed","attr":{"from":{"level":2,"slowms":100,"sampleRate":1},"to":{"level":1,"slowms":100,"sampleRate":1,"filter":{"op":{"$in":["insert","remove","update"]}}},"db":"comercial"}}
+
+{"t":{"$date":"2026-11-22T21:39:15.882-07:00"},"s":"I",  "c":"WTCHKPT",  "id":22430,   "ctx":"Checkpointer","msg":"WiredTiger message","attr":{"message":{"ts_sec":1795408755,"ts_usec":881703,"thread":"5476:140728550852128","session_name":"WT_SESSION.checkpoint","category":"WT_VERB_CHECKPOINT_PROGRESS","category_id":7,"verbose_level":"DEBUG_1","verbose_level_id":1,"msg":"saving checkpoint snapshot min: 33, snapshot max: 33 snapshot count: 0, oldest timestamp: (0, 0) , meta checkpoint timestamp: (0, 0) base write gen: 172136"}}}
+
+{"t":{"$date":"2026-11-22T21:40:15.951-07:00"},"s":"I",  "c":"WTCHKPT",  "id":22430,   "ctx":"Checkpointer","msg":"WiredTiger message","attr":{"message":{"ts_sec":1795408815,"ts_usec":951190,"thread":"5476:140728550852128","session_name":"WT_SESSION.checkpoint","category":"WT_VERB_CHECKPOINT_PROGRESS","category_id":7,"verbose_level":"DEBUG_1","verbose_level_id":1,"msg":"saving checkpoint snapshot min: 35, snapshot max: 35 snapshot count: 0, oldest timestamp: (0, 0) , meta checkpoint timestamp: (0, 0) base write gen: 172136"}}}
+
+{"t":{"$date":"2026-11-22T21:41:16.002-07:00"},"s":"I",  "c":"WTCHKPT",  "id":22430,   "ctx":"Checkpointer","msg":"WiredTiger message","attr":{"message":{"ts_sec":1795408876,"ts_usec":1696,"thread":"5476:140728550852128","session_name":"WT_SESSION.checkpoint","category":"WT_VERB_CHECKPOINT_PROGRESS","category_id":7,"verbose_level":"DEBUG_1","verbose_level_id":1,"msg":"saving checkpoint snapshot min: 36, snapshot max: 36 snapshot count: 0, oldest timestamp: (0, 0) , meta checkpoint timestamp: (0, 0) base write gen: 172136"}}}
+
+{"t":{"$date":"2026-11-22T21:42:16.052-07:00"},"s":"I",  "c":"WTCHKPT",  "id":22430,   "ctx":"Checkpointer","msg":"WiredTiger message","attr":{"message":{"ts_sec":1795408936,"ts_usec":52179,"thread":"5476:140728550852128","session_name":"WT_SESSION.checkpoint","category":"WT_VERB_CHECKPOINT_PROGRESS","category_id":7,"verbose_level":"DEBUG_1","verbose_level_id":1,"msg":"saving checkpoint snapshot min: 37, snapshot max: 37 snapshot count: 0, oldest timestamp: (0, 0) , meta checkpoint timestamp: (0, 0) base write gen: 172136"}}}
+
+{"t":{"$date":"2026-11-22T23:45:44.930-07:00"},"s":"I",  "c":"INDEX",    "id":5479200, "ctx":"TTLMonitor","msg":"Deleted expired documents using index","attr":{"namespace":"config.system.sessions","index":"lsidTTLIndex","numDeleted":8,"durationMillis":131}}
+
+{"t":{"$date":"2026-11-22T23:45:45.050-07:00"},"s":"W",  "c":"NETWORK",  "id":4615610, "ctx":"conn9","msg":"Failed to check socket connectivity","attr":{"error":{"code":6,"codeName":"HostUnreachable","errmsg":"peekASIOStream :: caused by :: Connection closed by peer"}}}
+
+{"t":{"$date":"2026-11-22T23:45:45.050-07:00"},"s":"I",  "c":"-",        "id":20883,   "ctx":"conn9","msg":"Interrupted operation as its client disconnected","attr":{"opId":23597}}
+
+{"t":{"$date":"2026-11-22T23:45:45.347-07:00"},"s":"W",  "c":"NETWORK",  "id":4615610, "ctx":"conn1","msg":"Failed to check socket connectivity","attr":{"error":{"code":6,"codeName":"HostUnreachable","errmsg":"peekASIOStream :: caused by :: Connection closed by peer"}}}
+
+{"t":{"$date":"2026-11-22T23:45:45.347-07:00"},"s":"I",  "c":"-",        "id":20883,   "ctx":"conn1","msg":"Interrupted operation as its client disconnected","attr":{"opId":14382}}
+
+{"t":{"$date":"2026-11-22T23:45:46.045-07:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn1","msg":"Connection ended","attr":{"remote":"127.0.0.1:3439","uuid":{"uuid":{"$uuid":"d7dde997-620a-4e49-8312-781b48910c68"}},"connectionId":1,"connectionCount":13}}
+
+{"t":{"$date":"2026-11-22T23:45:46.123-07:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn9","msg":"Connection ended","attr":{"remote":"127.0.0.1:28492","uuid":{"uuid":{"$uuid":"18d84714-3a19-4d50-bc17-232de4ad90a4"}},"connectionId":9,"connectionCount":12}}
+
+{"t":{"$date":"2026-11-22T23:45:49.962-07:00"},"s":"W",  "c":"WT",       "id":22430,   "ctx":"thread42","msg":"WiredTiger message","attr":{"message":{"ts_sec":1795416349,"ts_usec":961619,"thread":"5476:140728550852128","session_name":"sweep-server","category":"WT_VERB_DEFAULT","category_id":12,"verbose_level":"WARNING","verbose_level_id":-2,"msg":"Session 21 (@: 0x000001EA22C54708 name: connection-open-session) did not run a sweep for 60 minutes."}}}
+
+{"t":{"$date":"2026-11-22T23:45:54.634-07:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:55205","uuid":{"uuid":{"$uuid":"1ffdfaac-0fd5-4e67-ba79-8e48a79c2c85"}},"connectionId":15,"connectionCount":13}}
+
+{"t":{"$date":"2026-11-22T23:45:54.635-07:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn15","msg":"client metadata","attr":{"remote":"127.0.0.1:55205","client":"conn15","negotiatedCompressors":[],"doc":{"application":{"name":"MongoDB Compass"},"driver":{"name":"nodejs","version":"7.5.0"},"platform":"Node.js v24.22.2, LE","os":{"name":"win32","architecture":"x64","version":"10.0.26200","type":"Windows_NT"}}}}
+
+{"t":{"$date":"2026-11-22T23:45:54.636-07:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn12","msg":"Connection ended","attr":{"remote":"127.0.0.1:2657","uuid":{"uuid":{"$uuid":"bff73c29-ed67-47e6-8b8d-ac812061709f"}},"connectionId":12,"connectionCount":12}}
+
+{"t":{"$date":"2026-11-22T23:45:54.636-07:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn11","msg":"Connection ended","attr":{"remote":"127.0.0.1:2656","uuid":{"uuid":{"$uuid":"cacb7544-0ff9-4ee2-8aa2-09e41dac1203"}},"connectionId":11,"connectionCount":11}}
+
+{"t":{"$date":"2026-11-22T23:45:54.636-07:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn10","msg":"Connection ended","attr":{"remote":"127.0.0.1:28493","uuid":{"uuid":{"$uuid":"42c0f44a-4853-43f9-b3b7-945cd1253d39"}},"connectionId":10,"connectionCount":10}}
+
+{"t":{"$date":"2026-11-22T23:45:54.983-07:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:55206","uuid":{"uuid":{"$uuid":"d6b1edc7-d9bd-4e35-828d-ca074de8433c"}},"connectionId":16,"connectionCount":11}}
+
+{"t":{"$date":"2026-11-22T23:45:54.985-07:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn16","msg":"client metadata","attr":{"remote":"127.0.0.1:55206","client":"conn16","negotiatedCompressors":[],"doc":{"application":{"name":"MongoDB Compass"},"driver":{"name":"nodejs","version":"7.5.0"},"platform":"Node.js v24.22.2, LE","os":{"name":"win32","architecture":"x64","version":"10.0.26200","type":"Windows_NT"}}}}
+
+{"t":{"$date":"2026-11-22T23:45:54.987-07:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn8","msg":"Connection ended","attr":{"remote":"127.0.0.1:3447","uuid":{"uuid":{"$uuid":"7070729c-b91b-4ada-9aa8-5177278534cf"}},"connectionId":8,"connectionCount":10}}
+
+{"t":{"$date":"2026-11-22T23:45:54.988-07:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn7","msg":"Connection ended","attr":{"remote":"127.0.0.1:3446","uuid":{"uuid":{"$uuid":"d5d99906-9e75-4c67-9883-5c18da0f566e"}},"connectionId":7,"connectionCount":9}}
+
+{"t":{"$date":"2026-11-22T23:45:54.988-07:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn6","msg":"Connection ended","attr":{"remote":"127.0.0.1:3445","uuid":{"uuid":{"$uuid":"62245926-da53-43ff-8209-eeef4983e727"}},"connectionId":6,"connectionCount":8}}
+
+{"t":{"$date":"2026-11-22T23:45:54.988-07:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn2","msg":"Connection ended","attr":{"remote":"127.0.0.1:3440","uuid":{"uuid":{"$uuid":"06f226f7-fdb4-4087-a88a-81e8724f8a42"}},"connectionId":2,"connectionCount":7}}
+
+{"t":{"$date":"2026-11-22T23:45:54.989-07:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn3","msg":"Connection ended","attr":{"remote":"127.0.0.1:3442","uuid":{"uuid":{"$uuid":"3bd476e7-b976-4c3d-ae0a-3566f4849075"}},"connectionId":3,"connectionCount":6}}
+
+{"t":{"$date":"2026-11-22T23:45:54.989-07:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn4","msg":"Connection ended","attr":{"remote":"127.0.0.1:3443","uuid":{"uuid":{"$uuid":"1170c3c3-2635-4991-b8ee-cb57329a482a"}},"connectionId":4,"connectionCount":5}}
+
+{"t":{"$date":"2026-11-22T23:45:54.989-07:00"},"s":"I",  "c":"NETWORK",  "id":22944,   "ctx":"conn5","msg":"Connection ended","attr":{"remote":"127.0.0.1:3444","uuid":{"uuid":{"$uuid":"a4684efe-fc2d-453e-bec2-38ff0409f3de"}},"connectionId":5,"connectionCount":4}}
+
+{"t":{"$date":"2026-11-22T23:46:40.482-07:00"},"s":"I",  "c":"WTCHKPT",  "id":22430,   "ctx":"Checkpointer","msg":"WiredTiger message","attr":{"message":{"ts_sec":1795416400,"ts_usec":481938,"thread":"5476:140728550852128","session_name":"WT_SESSION.checkpoint","category":"WT_VERB_CHECKPOINT_PROGRESS","category_id":7,"verbose_level":"DEBUG_1","verbose_level_id":1,"msg":"saving checkpoint snapshot min: 41, snapshot max: 41 snapshot count: 0, oldest timestamp: (0, 0) , meta checkpoint timestamp: (0, 0) base write gen: 172136"}}}
+
+{"t":{"$date":"2026-11-22T23:47:40.505-07:00"},"s":"I",  "c":"WTCHKPT",  "id":22430,   "ctx":"Checkpointer","msg":"WiredTiger message","attr":{"message":{"ts_sec":1795416460,"ts_usec":505436,"thread":"5476:140728550852128","session_name":"WT_SESSION.checkpoint","category":"WT_VERB_CHECKPOINT_PROGRESS","category_id":7,"verbose_level":"DEBUG_1","verbose_level_id":1,"msg":"saving checkpoint snapshot min: 44, snapshot max: 44 snapshot count: 0, oldest timestamp: (0, 0) , meta checkpoint timestamp: (0, 0) base write gen: 172136"}}}
+
+{"t":{"$date":"2026-11-22T23:48:40.555-07:00"},"s":"I",  "c":"WTCHKPT",  "id":22430,   "ctx":"Checkpointer","msg":"WiredTiger message","attr":{"message":{"ts_sec":1795416520,"ts_usec":555059,"thread":"5476:140728550852128","session_name":"WT_SESSION.checkpoint","category":"WT_VERB_CHECKPOINT_PROGRESS","category_id":7,"verbose_level":"DEBUG_1","verbose_level_id":1,"msg":"saving checkpoint snapshot min: 45, snapshot max: 45 snapshot count: 0, oldest timestamp: (0, 0) , meta checkpoint timestamp: (0, 0) base write gen: 172136"}}}
+
+{"t":{"$date":"2026-11-22T23:49:40.593-07:00"},"s":"I",  "c":"WTCHKPT",  "id":22430,   "ctx":"Checkpointer","msg":"WiredTiger message","attr":{"message":{"ts_sec":1795416580,"ts_usec":593411,"thread":"5476:140728550852128","session_name":"WT_SESSION.checkpoint","category":"WT_VERB_CHECKPOINT_PROGRESS","category_id":7,"verbose_level":"DEBUG_1","verbose_level_id":1,"msg":"saving checkpoint snapshot min: 46, snapshot max: 46 snapshot count: 0, oldest timestamp: (0, 0) , meta checkpoint timestamp: (0, 0) base write gen: 172136"}}}
+
+{"t":{"$date":"2026-11-22T23:50:40.618-07:00"},"s":"I",  "c":"WTCHKPT",  "id":22430,   "ctx":"Checkpointer","msg":"WiredTiger message","attr":{"message":{"ts_sec":1795416640,"ts_usec":618559,"thread":"5476:140728550852128","session_name":"WT_SESSION.checkpoint","category":"WT_VERB_CHECKPOINT_PROGRESS","category_id":7,"verbose_level":"DEBUG_1","verbose_level_id":1,"msg":"saving checkpoint snapshot min: 47, snapshot max: 47 snapshot count: 0, oldest timestamp: (0, 0) , meta checkpoint timestamp: (0, 0) base write gen: 172136"}}}
+
+{"t":{"$date":"2026-11-22T23:51:40.646-07:00"},"s":"I",  "c":"WTCHKPT",  "id":22430,   "ctx":"Checkpointer","msg":"WiredTiger message","attr":{"message":{"ts_sec":1795416700,"ts_usec":645781,"thread":"5476:140728550852128","session_name":"WT_SESSION.checkpoint","category":"WT_VERB_CHECKPOINT_PROGRESS","category_id":7,"verbose_level":"DEBUG_1","verbose_level_id":1,"msg":"saving checkpoint snapshot min: 48, snapshot max: 48 snapshot count: 0, oldest timestamp: (0, 0) , meta checkpoint timestamp: (0, 0) base write gen: 172136"}}}
+
+{"t":{"$date":"2026-11-22T23:52:40.678-07:00"},"s":"I",  "c":"WTCHKPT",  "id":22430,   "ctx":"Checkpointer","msg":"WiredTiger message","attr":{"message":{"ts_sec":1795416760,"ts_usec":677608,"thread":"5476:140728550852128","session_name":"WT_SESSION.checkpoint","category":"WT_VERB_CHECKPOINT_PROGRESS","category_id":7,"verbose_level":"DEBUG_1","verbose_level_id":1,"msg":"saving checkpoint snapshot min: 49, snapshot max: 49 snapshot count: 0, oldest timestamp: (0, 0) , meta checkpoint timestamp: (0, 0) base write gen: 172136"}}}
+
+{"t":{"$date":"2026-11-22T23:53:40.709-07:00"},"s":"I",  "c":"WTCHKPT",  "id":22430,   "ctx":"Checkpointer","msg":"WiredTiger message","attr":{"message":{"ts_sec":1795416820,"ts_usec":708448,"thread":"5476:140728550852128","session_name":"WT_SESSION.checkpoint","category":"WT_VERB_CHECKPOINT_PROGRESS","category_id":7,"verbose_level":"DEBUG_1","verbose_level_id":1,"msg":"saving checkpoint snapshot min: 50, snapshot max: 50 snapshot count: 0, oldest timestamp: (0, 0) , meta checkpoint timestamp: (0, 0) base write gen: 172136"}}}
+
+{"t":{"$date":"2026-11-22T23:54:40.734-07:00"},"s":"I",  "c":"WTCHKPT",  "id":22430,   "ctx":"Checkpointer","msg":"WiredTiger message","attr":{"message":{"ts_sec":1795416880,"ts_usec":734325,"thread":"5476:140728550852128","session_name":"WT_SESSION.checkpoint","category":"WT_VERB_CHECKPOINT_PROGRESS","category_id":7,"verbose_level":"DEBUG_1","verbose_level_id":1,"msg":"saving checkpoint snapshot min: 51, snapshot max: 51 snapshot count: 0, oldest timestamp: (0, 0) , meta checkpoint timestamp: (0, 0) base write gen: 172136"}}}
+
+{"t":{"$date":"2026-11-22T23:55:40.758-07:00"},"s":"I",  "c":"WTCHKPT",  "id":22430,   "ctx":"Checkpointer","msg":"WiredTiger message","attr":{"message":{"ts_sec":1795416940,"ts_usec":758057,"thread":"5476:140728550852128","session_name":"WT_SESSION.checkpoint","category":"WT_VERB_CHECKPOINT_PROGRESS","category_id":7,"verbose_level":"DEBUG_1","verbose_level_id":1,"msg":"saving checkpoint snapshot min: 52, snapshot max: 52 snapshot count: 0, oldest timestamp: (0, 0) , meta checkpoint timestamp: (0, 0) base write gen: 172136"}}}
+
+{"t":{"$date":"2026-11-22T23:56:25.559-07:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"127.0.0.1:4661","uuid":{"uuid":{"$uuid":"9fbe62d9-461d-4cfa-8f53-cc64632cce89"}},"connectionId":17,"connectionCount":5}}
+
+{"t":{"$date":"2026-11-22T23:56:25.560-07:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn17","msg":"client metadata","attr":{"remote":"127.0.0.1:4661","client":"conn17","negotiatedCompressors":[],"doc":{"application":{"name":"MongoDB Compass"},"driver":{"name":"nodejs","version":"7.5.0"},"platform":"Node.js v24.22.2, LE","os":{"name":"win32","architecture":"x64","version":"10.0.26200","type":"Windows_NT"}}}}
+
+{"t":{"$date":"2026-11-22T23:56:25.561-07:00"},"s":"I",  "c":"ACCESS",   "id":6788604, "ctx":"conn17","msg":"Auth metrics report","attr":{"metric":"acquireUser","micros":0}}
+
+{"t":{"$date":"2026-11-22T23:56:25.565-07:00"},"s":"I",  "c":"ACCESS",   "id":5286306, "ctx":"conn17","msg":"Successfully authenticated","attr":{"client":"127.0.0.1:4661","isSpeculative":true,"isClusterMember":false,"mechanism":"SCRAM-SHA-256","user":"admin","db":"admin","result":0,"metrics":{"conversation_duration":{"micros":4123,"summary":{"0":{"step":1,"step_total":2,"duration_micros":537},"1":{"step":2,"step_total":2,"duration_micros":36}}}},"extraInfo":{}}}
+
+{"t":{"$date":"2026-11-22T23:56:25.566-07:00"},"s":"I",  "c":"NETWORK",  "id":6788700, "ctx":"conn17","msg":"Received first command on ingress connection since session start or auth handshake","attr":{"elapsedMillis":1}}
+
+{"t":{"$date":"2026-11-22T23:56:40.789-07:00"},"s":"I",  "c":"WTCHKPT",  "id":22430,   "ctx":"Checkpointer","msg":"WiredTiger message","attr":{"message":{"ts_sec":1795417000,"ts_usec":789154,"thread":"5476:140728550852128","session_name":"WT_SESSION.checkpoint","category":"WT_VERB_CHECKPOINT_PROGRESS","category_id":7,"verbose_level":"DEBUG_1","verbose_level_id":1,"msg":"saving checkpoint snapshot min: 53, snapshot max: 53 snapshot count: 0, oldest timestamp: (0, 0) , meta checkpoint timestamp: (0, 0) base write gen: 172136"}}}
+
+{"t":{"$date":"2026-11-22T23:57:40.814-07:00"},"s":"I",  "c":"WTCHKPT",  "id":22430,   "ctx":"Checkpointer","msg":"WiredTiger message","attr":{"message":{"ts_sec":1795417060,"ts_usec":813329,"thread":"5476:140728550852128","session_name":"WT_SESSION.checkpoint","category":"WT_VERB_CHECKPOINT_PROGRESS","category_id":7,"verbose_level":"DEBUG_1","verbose_level_id":1,"msg":"saving checkpoint snapshot min: 55, snapshot max: 55 snapshot count: 0, oldest timestamp: (0, 0) , meta checkpoint timestamp: (0, 0) base write gen: 172136"}}}
